@@ -51,6 +51,8 @@
 
 /* Begin PBXFileReference section */
 		0ABCCEF7293FEA26004441B3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9AE31BAD29BC56A8006B7617 /* ci_post_xcodebuild.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_xcodebuild.sh; sourceTree = "<group>"; };
+		9AE31BAF29BC5760006B7617 /* firebase-tools-macos.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "firebase-tools-macos.zip"; sourceTree = "<group>"; };
 		AE23BD0C28C478AF00392827 /* CoffeeEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeEditor.swift; sourceTree = "<group>"; };
 		AE23BD0E28C4792600392827 /* UserDefaultsCoffeeDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsCoffeeDataStore.swift; sourceTree = "<group>"; };
 		AE23BD1028C47F7F00392827 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -106,6 +108,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9AE31BAC29BC5674006B7617 /* ci_scripts */ = {
+			isa = PBXGroup;
+			children = (
+				9AE31BAD29BC56A8006B7617 /* ci_post_xcodebuild.sh */,
+				9AE31BAF29BC5760006B7617 /* firebase-tools-macos.zip */,
+			);
+			path = ci_scripts;
+			sourceTree = "<group>";
+		};
 		AE47F15428D3F92200CB3F39 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +130,7 @@
 		AE4E564328C313DE00CBF8BC = {
 			isa = PBXGroup;
 			children = (
+				9AE31BAC29BC5674006B7617 /* ci_scripts */,
 				AE4E564E28C313DE00CBF8BC /* Coffee */,
 				AE7D553828CD47850013DD60 /* CoffeeKit */,
 				AE4E566028C313DF00CBF8BC /* CoffeeTests */,
